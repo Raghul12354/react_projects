@@ -11,10 +11,10 @@ const Navbar = () => {
             <div className="flex flex-row justify-between items-center px-[13%] py-4 bg-white shadow-lg">
 
                 {/* Logo */}
-                <div className="">
+                <div>
                     <img className="object-cover w-[200px]" src="https://react-projects-11-navbar.netlify.app/static/media/logo.2bb7da65.svg" alt="Logo" />
                 </div>
-                {/* navbars */}
+                {/* navbar*/}
                 <Navs fetch={fetch} />
                 {/* icons */}
                 <Icon icon={icon} />

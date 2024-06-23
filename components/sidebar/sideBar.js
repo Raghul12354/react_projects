@@ -24,7 +24,7 @@ function SideBar() {
             <SideMenu open={open} setopen={setopen} />
             {/* modal */}
             <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
-            <div className='flex justify-center items-center absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 '>
+            <div className='flex justify-center items-center absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4'>
                 <button onClick={openModal} className='tracking-widest text-lg capitalize text-white bg-black py-[2px] px-3 rounded-md hover:bg-transparent border-2 border-black hover:text-black duration-[.3s]'>show modal</button>
             </div>
         </div>

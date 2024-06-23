@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 // import Birthday from "../components/birthday-project/birthday";
 // import Tour from "../components/tour-project/tour";
@@ -19,12 +20,17 @@ import Link from "next/link";
 
 function index() {
   return (
-    <main className="bg-gray-200 h-screen w-full">
-      <ul className="grid grid-cols-1 md:grid-cols-3 place-items-center px-6 md:px-40 gap-10 md:gap-20 pt-16">
+    <main className="bg-gray-200 min-h-screen w-full pb-10">
+      <div className="flex justify-center items-center flex-col mb-[3rem]">
+        <h1 className="text-[2.5rem] font-bold text-blacky  tracking-wide capitalize mt-20">React Projects</h1>
+        <div className="mx-auto h-1 w-24 bg-blue mt-2"></div>
+      </div>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center px-6 md:px-20 xl:px-40 gap-10 md:gap-20 pt-16">
         <Link
           href="/review"
-          className="border-2 text-2xl font-semibold flex items-center justify-center bg-white shadow-xl w-full h-60 rounded-xl"
+          className="relative border-2 text-2xl font-semibold flex items-center justify-center bg-white shadow-xl w-full h-60 rounded-xl"
         >
+          {/* <Image src="/review_bg.png" alt="" fill={true} sizes="" className="object-cover object-center" /> */}
           Review
         </Link>
         <Link
@@ -32,7 +38,7 @@ function index() {
           className="border-2 text-2xl font-semibold flex items-center justify-center bg-white shadow-xl w-full h-60 rounded-xl"
         >
           {" "}
-          SideBar
+          Accordion
         </Link>
         {" "}
         <Link
@@ -54,7 +60,7 @@ function index() {
           className="border-2 text-2xl font-semibold flex items-center justify-center bg-white shadow-xl w-full h-60 rounded-xl"
         >
           {" "}
-          Navbar
+          SideBar
         </Link>
       </ul>
 

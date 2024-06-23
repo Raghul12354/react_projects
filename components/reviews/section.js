@@ -38,7 +38,7 @@ const section = () => {
     }
     return (
         <div className="grid place-items-center px-8">
-            <div className="bg-white box-border shadow-md w-full sm:w-[550px] rounded-md my-6 px-8 py-5">
+            <div className="bg-white box-border shadow-md w-full sm:w-[550px] min-h-[400px] rounded-md my-6 px-8 py-5">
                 <div className="flex flex-col items-center justify-center">
                     <img className="rounded-full h-[100px] w-[100px] md:h-[150px] md:w-[150px] object-cover" src={image} alt={name} />
                     {/* <h2 className="text-lg font-medium capitalize mt-2">{name}</h2> */}
@@ -52,7 +52,7 @@ const section = () => {
                             <BtnNext />
                         </button>
                     </div>
-                    <button onClick={randoms} className="px-5 bg-teal-100 text-sm text-blue mt-5 rounded">Surprise</button>
+                    <button onClick={randoms} className="px-8 py-1 bg-teal-100 text-lg font-medium text-blue mt-7 rounded-xl">Surprise</button>
                 </div>
             </div>
         </div>

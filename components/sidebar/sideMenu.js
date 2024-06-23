@@ -3,11 +3,11 @@ import { links, social } from "./dataSide";
 
 const SideMenu = ({ open, setopen }) => {
     return (
-        <div className={`${open ? "left-0" : "-left-full"} bg-white w-[400px] py-5 px-6 cursor-pointer top-0 fixed duration-[.4s]`}>
+        <div className={`${open ? "left-0" : "-left-full"} bg-white h-full w-full md:w-[400px] py-5 px-6 cursor-pointer top-0 fixed duration-[.4s] z-10`}>
             {/* Heading */}
             <div className="flex flex-row justify-between items-center mb-[15%]">
-                <img className="object-cover w-[200px] mr-8" src="https://react-projects-11-navbar.netlify.app/static/media/logo.2bb7da65.svg" alt="Logo" />
-                <FaTimes className="text-red-700 text-3xl" onClick={() => setopen(!open)} />
+                <img className="object-cover w-[160px] md:w-[200px] mr-8" src="https://react-projects-11-navbar.netlify.app/static/media/logo.2bb7da65.svg" alt="Logo" />
+                <FaTimes className="text-red-700 text-3xl mr-2" onClick={() => setopen(!open)} />
             </div>
             {/* Links */}
             {

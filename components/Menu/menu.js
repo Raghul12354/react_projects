@@ -18,7 +18,7 @@ function menu() {
     }
 
     return (
-        <div className='h-min w-full bg-grey'>
+        <div className='min-h-full w-full bg-grey'>
             <Heading />
             <Categories filterItems={filterItems} /> {/*sending as props*/}
             <Item items={menus} /> {/*sending as props*/}
