@@ -2,6 +2,9 @@
 
 Built small React projects to learn core concepts and practice hooks and state management.
 
+## 🚀 Live Demo
+🔗 https://react-projects12.netlify.app/
+
 ## Installation
 
 - git clone https://github.com/Raghul12354/react_projects.git
